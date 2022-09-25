@@ -32,7 +32,7 @@ const Product = ({ product, handleAddToCart }) => {
               className="flex mx-auto py-1"
               onClick={() => handleAddToCart(product)}
             >
-              <p>Add to cart</p>
+              <p className="mr-5">Add to cart</p>
               <ShoppingCartIcon className="h-6 w-6 text-primary"></ShoppingCartIcon>
             </button>
           </div>
