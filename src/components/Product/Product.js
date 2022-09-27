@@ -6,7 +6,7 @@ const Product = ({ product, handleAddToCart }) => {
 
   return (
     <div className="">
-      <div className="card w-96 bg-base-100 shadow-xl">
+      <div className="card w-11/12 bg-base-100 shadow-xl md:5 sm:5">
         <figure>
           <img src={img ? img : noImg} alt="No Images Found" />
         </figure>

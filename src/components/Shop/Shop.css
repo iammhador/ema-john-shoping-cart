@@ -3,9 +3,16 @@
   grid-template-columns: 4fr 1fr;
 }
 
-@media only screen and (max-width: 1280px) and (min-width: 720px) {
+@media only screen and (max-width: 1280px) and (min-width: 769px) {
   .shop-container {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: 3fr 1fr;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 420px) {
+  .shop-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

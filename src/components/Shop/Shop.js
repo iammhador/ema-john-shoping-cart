@@ -45,7 +45,7 @@ const Shop = () => {
   };
   return (
     <div className="shop-container">
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 py-5 my-5 mx-5 product-container">
+      <div className="product-container lg:grid lg:grid-cols-3 md:grid md:grid-cols-2 sm:grid sm:grid-cols-1 lg:gap-5 md:gap-5 sm:gap-5 py-5 my-5 mx-5 ">
         {products.map((product) => (
           <Product
             key={product.id}
