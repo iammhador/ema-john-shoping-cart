@@ -1,13 +1,14 @@
 import React from "react";
+import noImg from "../../images/no-pictures.png";
 import { ShoppingCartIcon } from "@heroicons/react/24/solid";
 const Product = ({ product, handleAddToCart }) => {
   const { img, name, price, seller, ratings } = product;
 
   return (
-    <div className=" ">
+    <div className="">
       <div className="card w-96 bg-base-100 shadow-xl">
         <figure>
-          <img src={img} alt="Shoes" />
+          <img src={img ? img : noImg} alt="No Images Found" />
         </figure>
         <div className="card-body bg-primary">
           <h2 className="card-title text-base-100 text-xl font-bold">

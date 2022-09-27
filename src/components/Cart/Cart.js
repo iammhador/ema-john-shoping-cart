@@ -3,8 +3,10 @@ import React from "react";
 const Cart = ({ cart }) => {
   let total = 0;
   let shipping = 0;
+  let quantity = 0;
   for (const product of cart) {
-    total = total + product.price;
+    quantity = quantity + product.quantity;
+    total = total + product.price * product.quantity;
     shipping = shipping + product.shipping;
   }
 
@@ -17,7 +19,7 @@ const Cart = ({ cart }) => {
         Order Summary
       </h1>
       <p className="text-xl font-medium my-1">
-        Selected Item : <span className="text-base-100"> {cart.length} </span>
+        Selected Item : <span className="text-base-100"> {quantity} </span>
       </p>
       <p className="text-xl font-medium my-1">
         Total Price : <span className="text-base-100"> ${total} </span>
